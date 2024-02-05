@@ -3,4 +3,33 @@
   <groupId>com.maven</groupId>
   <artifactId>com.Demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ <build>
+	 <plugins>
+		<plugin>
+			 <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+		</plugin>
+	 </plugins>
+ </build>
+  <dependencies>
+	
+	  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17-beta1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17-beta1</version>
+</dependency>
+
+
+  </dependencies>
 </project>
